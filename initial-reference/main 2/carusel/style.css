@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carousel {
+  margin: 20px 0;
+  display: flex;
+  width: 88%;
+  height: 100%;
+  position: fixed;
+  justify-content: center;
+}
+
+.carousel-wrapper {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 1050px;
+  height: 300px
+}
+
+.content-button {
+  position: absolute;
+  bottom: 25px;
+  left: 120px;
+}
+
+.carousel-items {
+  width: calc(100% * 4);
+  position: relative;
+  height: 100%
+}
+
+.carousel-block {
+  float: left;
+  width: 25%;
+  height: 100%
+}
+
+.carousel-block_img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://via.placeholder.com/1920x1080");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@media screen and (orientation: portrait) and (max-width: 420px) {
+  .bg1 {
+    background-image: url(https://image.ibb.co/iZOxvU/bg1m.jpg);
+  }
+
+  .bg2 {
+    background-image: url(https://image.ibb.co/d3RT29/bg2m.jpg);
+  }
+
+  .bg3 {
+    background-image: url(https://image.ibb.co/cJvz9p/bg3m.jpg);
+  }
+
+  .bg4 {
+    background-image: url(https://image.ibb.co/bMWjaU/bg4m.jpg);
+  }
+}
